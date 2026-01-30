@@ -397,6 +397,76 @@
   </material>
 
 
+<!-- Custom Sense Wire Materials for further analysis-->
+
+<!-- Electroless nickel-phosphorus (example: 90 wt% Ni, 10 wt% P) -->
+  <material name="NiP_90Ni_10P">
+    <comment>Electroless Ni-P underplate (approx. 10 wt% P); rho ~ 7.8 g/cm3</comment>
+    <D type="density" value="7.8" unit="g/cm3"/>
+    <fraction n="0.90" ref="Ni"/>
+    <fraction n="0.10" ref="P"/>
+  </material>
+
+
+  <material name="DCH_SWireMatCF_25umCF_0p2umNiP_1.2umAu">
+    <comment>Sense wire: 25 um CF core + 0.2 um Ni-P underplate + 2.0 um Au coating</comment>
+    <comment>Ni-P is a common underplate/barrier concept under Au (ENIG-style) and used for metallizing carbon fibers</comment>
+    <comment>Effective homogeneous material (mass-weighted by cylindrical layer areas)</comment>
+
+    <D type="density" value="6.5225230228" unit="g/cm3"/>
+
+    <fraction n="0.2217173767" ref="CFWire"/>
+    <fraction n="0.0278916912" ref="NiP_90Ni_10P"/>
+    <fraction n="0.7503909321" ref="Au"/>
+  </material>
+
+
+
+  <material name="DCH_SWireMat20umCF_1.47625umAu">
+    <comment> 20/21.47625 * 2  +  1.47625/21.47625 * 19.3 </comment>
+    <D type="density" value="3.18917990803" unit="g/cm3"/>
+    <comment> sense wire:             25 um CF  (core), 2 um Au (coating) </comment>
+    <fraction n="0.93126127699"   ref="CFWire"/>
+    <fraction n="0.068738723"  ref="Au"/>
+  </material>
+  
+
+  <material name="DCH_SWireMat25umCF_1.2318umAu">
+    <comment> 25/26.2318 * 2  +  1.2318/26.2318 * 19.3 </comment>
+    <D type="density" value="2.81417810594" unit="g/cm3"/>
+    <comment> sense wire:             25 um CF  (core), 2 um Au (coating) </comment>
+    <fraction n="0.95304172797"   ref="CFWire"/>
+    <fraction n="0.04695827202"  ref="Au"/>
+  </material>
+
+
+  <material name="DCH_SWireMat50umCF_0.650514umAu">
+    <comment> 50/50.650514 * 2  +  0.650514/50.650514 * 19.3 </comment>
+    <D type="density" value="2.22218712726" unit="g/cm3"/>
+    <comment> sense wire:             25 um CF  (core), 2 um Au (coating) </comment>
+    <fraction n="0.98715681345"   ref="CFWire"/>
+    <fraction n="0.01284318654"  ref="Au"/>
+  </material>
+
+
+  <material name="DCH_SWireMat100umCF_0.313474umAu">
+    <comment> 100/100.313474 * 2  +  0.313474/100.313474 * 19.3 </comment>
+    <D type="density" value="2.05406153313" unit="g/cm3"/>
+    <comment> sense wire:             25 um CF  (core), 2 um Au (coating) </comment>
+    <fraction n="0.99687505588"   ref="CFWire"/>
+    <fraction n="0.00312494411"  ref="Au"/>
+  </material>
+
+
+  <material name="DCH_SWireMat10umCF_2.31963umAu">
+    <comment> 10/12.31963 * 2  +  2.31963/12.3196 * 19.3 </comment>
+    <D type="density" value="5.25737932215" unit="g/cm3"/>
+    <comment> sense wire:             25 um CF  (core), 2 um Au (coating) </comment>
+    <fraction n="0.81171268942"   ref="CFWire"/>
+    <fraction n="0.18828776908"  ref="Au"/>
+  </material>
+
+
   <!-- FCCeeIDEA: end of material for the drift chamber -->
 
   <!-- FCCeeIDEA: material for the microRWELL detectors(for Muon system and Pre-shower)-->
