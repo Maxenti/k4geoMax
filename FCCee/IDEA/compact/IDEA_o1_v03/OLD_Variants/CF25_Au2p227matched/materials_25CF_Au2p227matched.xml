@@ -357,30 +357,27 @@
 
 
   <material name="DCH_FCentralWireMat">
-    <comment>Effective density from cylindrical area fractions: 0.98810714*2.7 + 0.011892860*10.49</comment>
-    <D type="density" value="2.7926453794" unit="g/cm3"/>
-    <comment>field wire center: 50 um Al core + 0.3 um total added Ag diameter</comment>
-    <comment>DD4hep fractions below are mass fractions, not area fractions</comment>
-    <fraction n="0.955326908916" ref="Al"/>
-    <fraction n="0.0446730910843" ref="Ag"/>
+    <comment> 0.98810714*2.7 + 0.011892860*10.49 </comment>
+    <D type="density" value="2.7926454" unit="g/cm3"/>
+    <comment> field wire center:      50 um Al (core), 0.3 um Ag (coating) </comment>
+    <fraction n="0.98810714"   ref="Al"/>
+    <fraction n="0.011892860"  ref="Ag"/>
   </material>
 
   <material name="DCH_FSideWireMat">
-    <comment>Effective density from cylindrical area fractions: 0.98516708*2.7 + 0.014832922*10.49</comment>
-    <D type="density" value="2.81554846778" unit="g/cm3"/>
-    <comment>field wires top/bottom: 40 um Al core + 0.3 um total added Ag diameter</comment>
-    <comment>DD4hep fractions below are mass fractions, not area fractions</comment>
-    <fraction n="0.944736397345" ref="Al"/>
-    <fraction n="0.0552636026553" ref="Ag"/>
+    <comment> 0.98516708*2.7 + 0.014832922*10.49 </comment>
+    <D type="density" value="2.8155485" unit="g/cm3"/>
+    <comment> field wires top/bottom: 40 um Al (core), 0.3 um Ag (coating) </comment>
+    <fraction n="0.98516708"   ref="Al"/>
+    <fraction n="0.014832922"  ref="Ag"/>
   </material>
 
-  <material name="DCH_SWireMat25CF_2umAu">
-    <comment>Sense wire: 25 um CF core + 2 um total added Au diameter (outer diameter 27 um)</comment>
-    <comment>Equivalent Au radial thickness = 1.0 um</comment>
-    <comment>Homogeneous effective material using cylindrical layer areas and mass fractions</comment>
-    <D type="density" value="4.4680384088" unit="g/cm3"/>
-    <fraction n="0.3837651971" ref="CFWire"/>
-    <fraction n="0.6162348029" ref="Au"/>
+  <material name="DCH_SWireMatCF">
+    <comment> 25/25.5*2 + 0.5/25.5*19.3 </comment>
+    <D type="density" value="2.2268292683" unit="g/cm3"/>
+    <comment> sense wire:             25 um CF  (core), 0.5 um Au (coating) </comment>
+    <fraction n="0.9756097561"   ref="CFWire"/>
+    <fraction n="0.0243902439"  ref="Au"/>
   </material>
 
   <material name="DCH_SWireMat25CF_3.5umAu">
@@ -479,7 +476,20 @@
   </material>
 
 
-  <!-- FCCeeIDEA: end of material for the drift chamber -->
+  
+
+  <!-- Auto-generated sense-wire variant (25CF_Au2p227matched) -->
+  <material name="DCH_SWireMatCF_25umCF_0umNiP_2.22678umAu">
+    <comment>Sense wire: 25 um CF core + 0 um total added Ni(P) diameter + 2.22678 um total added Au diameter</comment>
+    <comment>Equivalent radial coating thicknesses: Ni(P) 0 um, Au 1.11339 um</comment>
+    <comment>Homogeneous effective material using cylindrical layer areas and mass fractions</comment>
+    <D type="density" value="4.714084537" unit="g/cm3"/>
+    <fraction n="0.357701052752" ref="CFWire"/>
+    <fraction n="0.642298947248" ref="Au"/>
+  </material>
+
+
+<!-- FCCeeIDEA: end of material for the drift chamber -->
 
   <!-- FCCeeIDEA: material for the microRWELL detectors(for Muon system and Pre-shower)-->
   <isotope N="63" Z="29" name="Cu63">

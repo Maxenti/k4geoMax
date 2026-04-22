@@ -479,7 +479,21 @@
   </material>
 
 
-  <!-- FCCeeIDEA: end of material for the drift chamber -->
+  
+
+  <!-- Auto-generated sense-wire variant (CF40_Ni0p1_Au0p045matched) -->
+  <material name="DCH_SWireMat_CF_40umCore_0p1umNiP_0p045umAu">
+    <comment>Sense wire: 40 um CF core + 0.1 um total added Ni(P) diameter + 0.045 um total added Au diameter</comment>
+    <comment>Core material ref: CFWire; equivalent radial coating thicknesses: Ni(P) 0.05 um, Au 0.0225 um</comment>
+    <comment>Homogeneous effective material using cylindrical layer areas and mass fractions</comment>
+    <D type="density" value="2.067589545" unit="g/cm3"/>
+    <fraction n="0.960334931452" ref="CFWire"/>
+    <fraction n="0.0187499393273" ref="NiP_90Ni_10P"/>
+    <fraction n="0.0209151292203" ref="Au"/>
+  </material>
+
+
+<!-- FCCeeIDEA: end of material for the drift chamber -->
 
   <!-- FCCeeIDEA: material for the microRWELL detectors(for Muon system and Pre-shower)-->
   <isotope N="63" Z="29" name="Cu63">
@@ -684,4 +698,14 @@
   </material>
   <!-- End of microRWELL materials -->
   
+
+
+<!-- Auto-added: Electroless nickel-phosphorus underplate (example definition) -->
+<material name="NiP_90Ni_10P">
+  <comment>Electroless Ni-P underplate (approx. 90 wt% Ni, 10 wt% P); rho ~ 7.8 g/cm3</comment>
+  <D type="density" value="7.8" unit="g/cm3"/>
+  <fraction n="0.90" ref="Ni"/>
+  <fraction n="0.10" ref="P"/>
+</material>
+
 </materials>

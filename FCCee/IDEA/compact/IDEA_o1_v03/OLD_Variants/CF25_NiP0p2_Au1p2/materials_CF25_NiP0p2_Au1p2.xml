@@ -357,41 +357,30 @@
 
 
   <material name="DCH_FCentralWireMat">
-    <comment>Effective density from cylindrical area fractions: 0.98810714*2.7 + 0.011892860*10.49</comment>
-    <D type="density" value="2.7926453794" unit="g/cm3"/>
-    <comment>field wire center: 50 um Al core + 0.3 um total added Ag diameter</comment>
-    <comment>DD4hep fractions below are mass fractions, not area fractions</comment>
-    <fraction n="0.955326908916" ref="Al"/>
-    <fraction n="0.0446730910843" ref="Ag"/>
+    <comment> 0.98810714*2.7 + 0.011892860*10.49 </comment>
+    <D type="density" value="2.7926454" unit="g/cm3"/>
+    <comment> field wire center:      50 um Al (core), 0.3 um Ag (coating) </comment>
+    <fraction n="0.98810714"   ref="Al"/>
+    <fraction n="0.011892860"  ref="Ag"/>
   </material>
 
   <material name="DCH_FSideWireMat">
-    <comment>Effective density from cylindrical area fractions: 0.98516708*2.7 + 0.014832922*10.49</comment>
-    <D type="density" value="2.81554846778" unit="g/cm3"/>
-    <comment>field wires top/bottom: 40 um Al core + 0.3 um total added Ag diameter</comment>
-    <comment>DD4hep fractions below are mass fractions, not area fractions</comment>
-    <fraction n="0.944736397345" ref="Al"/>
-    <fraction n="0.0552636026553" ref="Ag"/>
+    <comment> 0.98516708*2.7 + 0.014832922*10.49 </comment>
+    <D type="density" value="2.8155485" unit="g/cm3"/>
+    <comment> field wires top/bottom: 40 um Al (core), 0.3 um Ag (coating) </comment>
+    <fraction n="0.98516708"   ref="Al"/>
+    <fraction n="0.014832922"  ref="Ag"/>
   </material>
 
-  <material name="DCH_SWireMat25CF_2umAu">
-    <comment>Sense wire: 25 um CF core + 2 um total added Au diameter (outer diameter 27 um)</comment>
-    <comment>Equivalent Au radial thickness = 1.0 um</comment>
-    <comment>Homogeneous effective material using cylindrical layer areas and mass fractions</comment>
-    <D type="density" value="4.4680384088" unit="g/cm3"/>
-    <fraction n="0.3837651971" ref="CFWire"/>
-    <fraction n="0.6162348029" ref="Au"/>
+  <material name="DCH_SWireMatCF">
+    <comment> 25/25.5*2 + 0.5/25.5*19.3 </comment>
+    <D type="density" value="2.2268292683" unit="g/cm3"/>
+    <comment> sense wire:             25 um CF  (core), 0.5 um Au (coating) </comment>
+    <fraction n="0.9756097561"   ref="CFWire"/>
+    <fraction n="0.0243902439"  ref="Au"/>
   </material>
 
-  <material name="DCH_SWireMat25CF_3.5umAu">
-    <comment>Sense wire: 25 um CF core, 3.5 um total added diameter from Au coating (outer diameter 28.5 um)</comment>
-    <comment>Effective homogeneous material using cylindrical cross-sectional area fractions and mass fractions</comment>
-    <D type="density" value="5.9872197601" unit="g/cm3"/>
-    <fraction n="0.2569874340" ref="CFWire"/>
-    <fraction n="0.7430125660" ref="Au"/>
-  </material>
-
-  <material name="DCH_SWireMat23CF_1umAu">
+  <material name="DCH_SWireMatCF_2umAu">
     <comment> 25/27 * 2  +  2/27 * 19.3 </comment>
     <D type="density" value="3.2815" unit="g/cm3"/>
     <comment> sense wire:             25 um CF  (core), 2 um Au (coating) </comment>
@@ -479,7 +468,20 @@
   </material>
 
 
-  <!-- FCCeeIDEA: end of material for the drift chamber -->
+  
+
+  <!-- Auto-generated sense-wire variant (CF25_NiP0p2_Au1p2) -->
+  <material name="DCH_SWireMatCF_25umCF_0.2umNiP_1.2umAu">
+    <comment>Sense wire: 25 um CF core + 0.2 um Ni(P) + 1.2 um Au (radial thicknesses for coatings)</comment>
+    <comment>Homogeneous effective material using cylindrical layer areas and mass fractions</comment>
+    <D type="density" value="5.009409451" unit="g/cm3"/>
+    <fraction n="0.322874606868" ref="CFWire"/>
+    <fraction n="0.0406171089446" ref="NiP_90Ni_10P"/>
+    <fraction n="0.636508284188" ref="Au"/>
+  </material>
+
+
+<!-- FCCeeIDEA: end of material for the drift chamber -->
 
   <!-- FCCeeIDEA: material for the microRWELL detectors(for Muon system and Pre-shower)-->
   <isotope N="63" Z="29" name="Cu63">
@@ -684,4 +686,14 @@
   </material>
   <!-- End of microRWELL materials -->
   
+
+
+<!-- Auto-added: Electroless nickel-phosphorus underplate (example definition) -->
+<material name="NiP_90Ni_10P">
+  <comment>Electroless Ni-P underplate (approx. 90 wt% Ni, 10 wt% P); rho ~ 7.8 g/cm3</comment>
+  <D type="density" value="7.8" unit="g/cm3"/>
+  <fraction n="0.90" ref="Ni"/>
+  <fraction n="0.10" ref="P"/>
+</material>
+
 </materials>

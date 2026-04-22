@@ -52,7 +52,7 @@
     - field wire center:      50 um Al (core), 0.3 um Ag (coating)
   -->
   <!-- sense wire thickness (total)   -->
-  <constant name="DCH_SWire_thicknessCF"           value="0.027*mm"   />
+  <constant name="DCH_SWire_thicknessCF"           value="0.0505*mm"   />
 
   <!-- Field Side (top/bottom) wire thickness (total)   -->
   <constant name="DCH_FSideWire_thickness"       value="0.0403*mm"   />
@@ -111,7 +111,7 @@
         SWire_thickness       ="DCH_SWire_thicknessCF"
         FSideWire_thickness   ="DCH_FSideWire_thickness"
         FCentralWire_thickness="DCH_FCentralWire_thickness"
-        SWire_material        ="DCH_SWireMat25CF_2umAu"
+        SWire_material        ="DCH_SWireMat_CF_50umCore_0p5umNiP_0umAu"
         FSideWire_material    ="DCH_FSideWireMat"
         FCentralWire_material ="DCH_FCentralWireMat"
       >

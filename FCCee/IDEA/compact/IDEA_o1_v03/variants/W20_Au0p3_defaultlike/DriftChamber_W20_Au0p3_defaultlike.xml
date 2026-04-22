@@ -47,12 +47,12 @@
   <!--
   Details about geometry of wires:
     - guard wire:             50 um Al (core), 0.3 um Ag (coating)
-    - sense wire:             25 um CF (core), 0.5 um Au (coating)
+    - sense wire:             20 um W  (core), 0.3 um Au (coating)
     - field wires top/bottom: 40 um Al (core), 0.3 um Ag (coating)
     - field wire center:      50 um Al (core), 0.3 um Ag (coating)
   -->
   <!-- sense wire thickness (total)   -->
-  <constant name="DCH_SWire_thicknessCF"           value="0.027*mm"   />
+  <constant name="DCH_SWire_thickness"           value="0.0203*mm"   />
 
   <!-- Field Side (top/bottom) wire thickness (total)   -->
   <constant name="DCH_FSideWire_thickness"       value="0.0403*mm"   />
@@ -108,10 +108,10 @@
         vis="dch_no_vis_nodaughters"
         buildSenseWires="True"
         buildFieldWires="True"
-        SWire_thickness       ="DCH_SWire_thicknessCF"
+        SWire_thickness       ="DCH_SWire_thickness"
         FSideWire_thickness   ="DCH_FSideWire_thickness"
         FCentralWire_thickness="DCH_FCentralWire_thickness"
-        SWire_material        ="DCH_SWireMat25CF_2umAu"
+        SWire_material        ="DCH_SWireMat_W_20umCore_0umNiP_0p3umAu"
         FSideWire_material    ="DCH_FSideWireMat"
         FCentralWire_material ="DCH_FCentralWireMat"
       >

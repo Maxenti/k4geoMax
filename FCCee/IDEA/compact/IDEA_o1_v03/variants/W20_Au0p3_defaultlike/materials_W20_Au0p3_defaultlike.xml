@@ -479,7 +479,20 @@
   </material>
 
 
-  <!-- FCCeeIDEA: end of material for the drift chamber -->
+  
+
+  <!-- Auto-generated sense-wire variant (W20_Au0p3_defaultlike) -->
+  <material name="DCH_SWireMat_W_20umCore_0umNiP_0p3umAu">
+    <comment>Sense wire: 20 um W core + 0 um total added Ni(P) diameter + 0.3 um total added Au diameter</comment>
+    <comment>Core material ref: W; equivalent radial coating thicknesses: Ni(P) 0 um, Au 0.15 um</comment>
+    <comment>Homogeneous effective material using cylindrical layer areas and mass fractions</comment>
+    <D type="density" value="19.28058677" unit="g/cm3"/>
+    <fraction n="0.970632208552" ref="W"/>
+    <fraction n="0.029367791448" ref="Au"/>
+  </material>
+
+
+<!-- FCCeeIDEA: end of material for the drift chamber -->
 
   <!-- FCCeeIDEA: material for the microRWELL detectors(for Muon system and Pre-shower)-->
   <isotope N="63" Z="29" name="Cu63">
